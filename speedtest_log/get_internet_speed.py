@@ -40,8 +40,8 @@ def log_server(res, db_session):
 def log_test(res, db_session):
     db_session.add(Test(
         server_id=int(res['server']['id']),
-        download_bits=res['download'],
-        upload_bits=res['upload'],
+        download_bps=res['download'],
+        upload_bps=res['upload'],
         ping_ms=res['ping'],
         bytes_received=res['bytes_received'],
         bytes_sent=res['bytes_sent'],

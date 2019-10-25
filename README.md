@@ -65,6 +65,6 @@ python speedtest_log/get_internet_speed.py
 ```
 Or it can be set up with `crontab` by adding a line like the following to run every hour:
 ```
-0 * * * * . $REPO_FILE_PATH/my.env; $PYTHON_PATH/speedtest_log/get_internet_speed.py
+0 * * * * . $REPO_FILE_PATH/my.env; $PYTHON_PATH $REPO_FILE_PATH/speedtest_log/get_internet_speed.py
 ```
 The `PYTHON_PATH` can be obtained using `pipenv --py`

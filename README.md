@@ -51,6 +51,7 @@ nano my.env
 
 After the config files are set run the database migrations with: 
 ```
+pipenv shell
 alembic upgrade head 
 ```
 
